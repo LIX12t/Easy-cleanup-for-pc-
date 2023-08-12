@@ -2,13 +2,13 @@
 :menu
 cls
 echo ..............................................
-echo PRESS 1-5 to select your task or e to EXIT.
+echo PRESS 1-4 to select your task or 4 to EXIT.
 echo...............................................
 
 echo 1 - Defragment 
 echo 2 - Clean Temp 
 echo 3 - Clean Logs and history
-echo 5 - exit 
+echo 4 - exit 
 
 
 set /p M=Type 1-5 then press enter
@@ -18,7 +18,7 @@ if %M% ==1 goto :defragment
 if %M% ==2 goto :Clean Temp
 if %M% ==3 goto :Clean Logs and history
 if %M% ==4  goto : remove unnecessary services 
-if %M% ==5  exit
+if %M% ==4  exit
 
 
 :Defragment 
